@@ -1,0 +1,74 @@
+{
+    "name": "webpack-for-git",
+    "version": "1.0.0",
+    "description": "webpack for react app",
+    "main": "app.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.5.0",
+        "@babel/plugin-proposal-class-properties": "^7.5.0",
+        "@babel/plugin-proposal-decorators": "^7.4.4",
+        "@babel/plugin-proposal-function-bind": "^7.2.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
+        "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
+        "@babel/plugin-proposal-private-methods": "^7.4.4",
+        "@babel/plugin-transform-async-to-generator": "^7.5.0",
+        "@babel/preset-env": "^7.5.0",
+        "autoprefixer": "^9.6.1",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-react-css-modules": "^5.2.6",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "babel-plugin-transform-react-pug": "^7.0.1",
+        "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+        "clean-webpack-plugin": "=1.0.0",
+        "copy-webpack-plugin": "^5.0.3",
+        "css-loader": "=0.14.5",
+        "css-mqpacker": "^7.0.0",
+        "cssnano": "^4.1.10",
+        "eslint-plugin-react": "^7.14.2",
+        "eslint-plugin-react-pug": "^0.7.1",
+        "image-webpack-loader": "^5.0.0",
+        "mini-css-extract-plugin": "^0.7.0",
+        "mozjpeg": "^6.0.1",
+        "pngquant": "^2.0.1",
+        "postcss-flexbugs-fixes": "^4.1.0",
+        "postcss-loader": "^3.0.0",
+        "postcss-sass": "^0.4.1",
+        "sass-loader": "^7.1.0",
+        "url-loader": "^2.1.0",
+        "webpack": "^4.35.2",
+        "webpack-bundle-analyzer": "^3.3.2",
+        "webpack-cli": "^3.3.5",
+        "webpack-dev-server": "^3.7.2",
+        "webpack-parallel-uglify-plugin": "^1.1.0",
+        "webpack-merge": "^4.2.1"
+    },
+    "scripts": {
+        "start": "DEBUG=express:router nodemon app.js",
+        "Development": "NODE_ENV=development webpack-dev-server --mode development --open --inline --hot",
+        "Production": "NODE_ENV=production webpack --mode production",
+        "Analyze": "NODE_ENV=production webpack --mode production --analyze",
+        "Chart": "webpack --profile --json > stats.json"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "keywords": [
+        "react",
+        "webpack",
+        "expresss",
+        "exsample",
+        "test"
+    ],
+    "author": "Alexey Dvoretsky",
+    "license": "ISC"
+}
